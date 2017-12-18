@@ -1,0 +1,243 @@
+.header {
+	top: 0px;
+}
+.page-wrapper {
+    background-color: #EEF3F9;
+}
+.content-wrap{
+    background: #fff;
+    float: left;
+    margin-left: 0px;
+    margin-top: 100px;
+    padding-bottom: 130px;
+    overflow-y: scroll;
+    overflow-y: hidden;
+	background-color: #EEF3F9;
+	max-height: calc(100vh - 100px);
+}
+.search-result-wrap{
+	padding: 20px;
+	padding-left: 200px;
+}
+#primary-tab ul,#primary-tab  li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#primary-tab ul.tabs {
+	width: 100%;
+	height: 68px;
+}
+#primary-tab ul.tabs li {
+	float: left;
+	height: 67px;
+	line-height: 24px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: -1px;	/* 讓 li 往下移來遮住 ul 的部份 border-bottom */
+	border:0px solid #fff;
+	border-left: none;
+	background:#85b9fF;
+}
+#primary-tab ul.tabs li a {
+	text-align:center;
+	height:68px;
+	display: block;
+	padding: 10px 20px;
+	color: #000;
+	border: 1px solid #fff;
+	text-decoration: none;
+}
+#primary-tab ul.tabs li.active a {
+	color: #fff;
+}
+#primary-tab ul.tabs li a:hover {
+	background: #5599FF;
+}
+#primary-tab ul.tabs li.active  {
+	background: #194A6B;
+}
+#primary-tab ul.tabs li.active a:hover {
+	background: #192A4B;
+}
+#primary-tab div.tab_container {
+	clear: left;
+	width: 880px;
+	height:250px;
+	border: 3px solid #192A4B; 
+	border:0px solid #fff; 
+	border-top: none;
+	background: #EEF3F9;
+	
+}
+#primary-tab div.tab_container .tab_content {
+	padding: 20px; 
+	border: 1px solid #c5c5c5;
+	background-color: #e8eef7;
+}
+select{
+	width:240px;
+	background:#eee url('../images/dropdown.svg') no-repeat 99% 2px;
+}
+
+/* ben-table是初始畫面輸入搜尋條件的那5個tab下的面框框 */
+.ben-table{
+	height:180px;
+ 	margin: 10px 125px;/* 五格的時候才這麼寬  */
+/* 	margin: 10px 20px; 四格的時候用這個*/
+	width:70%;
+}
+.ben-table td:nth-child(2n+1){
+	padding-right:12px;
+	text-align:right;
+	font-size:20px;
+	font-weight:bold;
+	width:160px;
+}
+.ben-table td{
+	padding:12px;
+}
+.btn-reset,.btn-search,.btn-sp_search{
+	font-size:24px;
+	font-weight:lighter; 
+	margin:10px;
+}
+
+.excel-table th{
+	font-weight: 700;
+	font-family: Times New Roman, cursive;
+	background: #D0CECE;
+}
+.excel-table tr{
+	height: 22px;
+}
+.excel-table tr:nth-child(odd){
+	background: #D9E1F2;
+}
+.excel-table tr:nth-child(even){
+	background: #FFF2CC;
+}
+
+.excel-table td{
+	padding: 0 20px;
+	word-break: keep-all;
+}
+.excel-table td:nth-child(1){
+	text-align:center;
+}
+.excel-table td:nth-child(3),.excel-table td:nth-child(4){
+	text-align: right;
+}
+.excel-table tr:nth-child(1) td:nth-child(1){
+	background: #fff;
+	font-size: 20px;
+	padding:10px 0px;
+}
+.for-village tr{
+	height: 18px;
+}
+.for-village td{
+	padding: 0 8px;
+}
+.for-village td:nth-child(odd){
+ 	text-align: left; 
+}
+.for-village td:nth-child(even){
+	text-align: right; 
+	padding-left:20px;
+}
+.excel-table tr:nth-child(1) td:nth-child(1){ 
+ 	background: #fff; 
+ 	text-align:center; 
+ 	font-size: 20px; 
+ } 
+.for-village th:nth-child(odd){
+	text-align: left;
+	padding:  0 12px;
+}
+.for-village th:nth-child(even){
+	text-align: right;
+	padding:  0 20px;
+}
+.ui-dialog{
+	z-index: 12000;
+}
+.ui-widget{
+	font-family: "微軟正黑體", "Microsoft JhengHei", 'LiHei Pro', Arial, Helvetica, sans-serif;
+}
+.ui-tabs .ui-tabs-panel {
+	width: 1130px;
+	height: 430px;
+}
+#data_dialog.ui-dialog-titlebar-close{
+	background: #ddd;
+}
+#data_dialog.ui-dialog-titlebar-close:hover{
+	background: #888;
+}
+
+/*長條圖的css*/
+#data_dialog .axis path, #data_dialog .axis line{
+	fill: none;
+	stroke: #999;
+	shape-rendering: crispEdges;
+}
+
+#data_dialog .axis text {
+ 	font-family: "微軟正黑體", "Microsoft JhengHei", 'LiHei Pro', Arial, Helvetica, sans-serif; 
+	font-weight: 500;
+	font-size: 16px;
+}
+
+#data_dialog #chart-tabs-3 .axis text, #data_dialog #chart-tabs-4 .axis text {
+	font-size: 12px;
+}
+#data_dialog .MyRect {
+	fill: steelblue;
+}
+
+#data_dialog .MyText {
+	fill: white;
+	text-anchor: middle;
+}
+path.slice{
+	stroke-width:2px;
+}
+/* 以下是右邊四個的的圓餅圖相關css */
+polyline{
+	opacity: .3;
+	stroke: black;
+	stroke-width: 2px;
+	fill: none;
+}
+div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: auto;					
+    max-width: 210px;
+    height: auto;					
+    padding: 6px 15px;
+    font: 12px sans-serif;		
+    background: lightsteelblue;
+    background:#f7f5d1;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;
+    z-index:91000;
+    opacity:0;
+}
+.little_gray_hr{
+	margin-left:20px;
+	height:1px;
+	border:none;
+	border-top:1px solid #ddd;
+}
+.ui-button.ui-corner-all.float_right{
+	float:right;
+	color:rgb(69, 69, 69);
+}
+.little-title{
+	text-align: left;
+	margin-bottom:3px;
+}
+/* 以上是右邊四個的的圓餅圖相關css */

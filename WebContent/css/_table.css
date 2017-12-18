@@ -1,0 +1,23 @@
+/* Table */
+table.result-table {
+	border: 1px solid #ccc;
+	font-size: 13px;
+	width: 100%;
+}
+table.result-table tr {
+	background: #eee
+}
+table.result-table tr:nth-child(2n+1) {
+	background: #fff;
+}
+table.result-table th {
+	background: var(--darkBlue);
+	border-bottom: 2px solid var(--lightBlue);
+	color: #fff;
+}
+table.result-table th, table.result-table td {/*border: 1px solid #aaa;*/
+	padding: 10px;
+}
+table.result-table td {
+	border: 1px solid #ddd;
+}

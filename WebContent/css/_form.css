@@ -1,0 +1,319 @@
+/* Forms */
+.form-wrap {
+
+}
+.form-row {
+	margin: 15px 0;
+	zoom: 1;
+}
+.form-row:before, .form-row:after {
+	content: '';
+	display: table;
+}
+.form-row:after {
+	clear: both;
+}
+.form-label {
+	display: inline-block;
+	font-size: 16px;	
+	padding-right: 6px;
+	height: 100%;
+	line-height: 36px;
+}	
+.block-label {
+	display: block;
+	font-size: 15px;
+	margin-bottom: 3px;
+	text-align: left
+}	
+.block-label ~ input[type="text"], .block-label ~ input[type="password"] {
+	margin-bottom: 0;
+}
+label {
+	display: inline-block;
+	font-size: 16px;	
+	margin-right: 5px;
+	vertical-align: middle;
+}
+input[type="text"], input[type="password"], select, textarea {
+	background: #efefef;
+	border: 1px solid #999;
+	font-size: 16px;
+	margin-bottom: 5px;
+	padding: 5px
+}
+input[type="text"]:hover, input[type="password"]:hover, select:hover, textarea:hover {
+
+}
+input[type="text"]:focus, input[type="text"].focus, input[type="password"]:focus, input[type="password"].focus, select:focus, select.focus, textarea:focus, textarea.focus {
+	background-color: #fff;
+	border: 1px solid var(--midBlue);
+}
+input[type="text"]:disabled, input[type="text"].readonly, input[type="password"]:disabled, input[type="password"].readonly, select:disabled, select.readonly, textarea:disabled, textarea.readonly {
+
+}
+input[type="text"].error, input[type="password"].error, select.error, textarea.error {
+
+}
+
+select {
+	background: #eee url('../images/dropdown.svg') no-repeat 96% 2px;
+	border: 1px solid #999;
+	border-radius: 0;
+	font-size: 16px;
+	font-family: '微軟正黑體';
+	padding: 2px 50px 2px 5px;
+	height: 30px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+select::-ms-expand {
+  display: none;
+}
+
+/*Checkbox*/
+input[type=checkbox] {
+	position: absolute;
+	left: -9999px
+  /*Disabled*/
+  /*Checked*/
+}
+input[type=checkbox] + label {
+	height: 32px;
+	margin: 0;
+	margin-right: 10px;
+	position: relative;
+	display: block;
+	float: left;
+	padding: 0px 0px 0px 28px;
+	cursor: pointer;/*Checkbox setup*/
+}
+input[type=checkbox] + label:before {
+	display: block;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin: -12px 0 0;
+	width: 24px;
+	height: 24px;
+	background-image: url(../images/checkbox.svg);
+	background-repeat: no-repeat;
+}
+input[type=checkbox]:disabled, input[type=checkbox].readonly {/*Disabled checked*/
+}
+input[type=checkbox]:disabled + label, input[type=checkbox].readonly + label {
+	cursor: not-allowed;
+	color: #666;
+}
+input[type=checkbox]:disabled + label:before, input[type=checkbox].readonly + label:before {
+	background-position: -48px 0;
+}
+input[type=checkbox]:disabled:checked + label, input[type=checkbox].readonly:checked + label {
+
+}
+input[type=checkbox]:disabled:checked + label:before, input[type=checkbox].readonly:checked + label:before {
+	background-position: -72px 0;
+}
+input[type=checkbox]:checked + label {
+
+}
+input[type=checkbox]:checked + label:before {
+	background-position: -24px 0;
+}
+
+/*Radio Button*/
+input[type=radio] {
+	position: absolute;
+	left: -9999px
+  /*Disabled*/
+  /*Checked*/
+}
+input[type=radio] + label {
+	box-sizing: border-box;
+	height: 32px;
+	margin: 0;
+	margin-right: 10px;
+	padding: 1px 0;
+	position: relative;
+	display: block;
+	float: left;
+	padding: 0px 0px 0px 28px;
+	cursor: pointer;
+}
+input[type=radio] + label:before {
+	display: block;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin: -12px 0 0;
+	width: 24px;
+	height: 24px;
+	background-image: url(../images/radiobutton.svg);
+	background-repeat: no-repeat;
+}
+input[type=radio]:focus {
+
+}
+input[type=radio]:focus:before {
+	background-position: -72px 0;
+}
+input[type=radio]:disabled, input[type=radio].readonly {/*Disabled checked*/
+}
+input[type=radio]:disabled + label, input[type=radio].readonly + label {
+	cursor: not-allowed;
+	color: #666;
+}
+input[type=radio]:disabled + label:before, input[type=radio].readonly + label:before {
+	background-position: -48px 0;
+}
+input[type=radio]:disabled:checked + label, input[type=radio].readonly:checked + label {
+	border-bottom: none;
+}
+input[type=radio]:disabled:checked + label:before, input[type=radio].readonly:checked + label:before {
+	background-position: -72px 0;
+}
+input[type=radio]:checked + label {/*border-bottom: 2px solid var(--midBlue);*/
+}
+input[type=radio]:checked + label:before {
+	background-position: -24px 0;
+}
+
+
+/*Datepicker*/
+.input-date {
+	background-image: url('../images/icon-datepicker.svg') !important;
+	background-repeat: no-repeat  !important;
+	background-position: right center  !important;
+}
+/* JQuery UI Calendar Customize */
+.ui-widget-content {
+	background: #fefefe;
+	border: 1px solid #ccc;
+}
+.ui-datepicker {
+	border-radius: 0;
+	box-shadow: 2px 2px 3px #777;
+	font-family: Arial, sans-serif;
+}
+.ui-datepicker table {
+	table-layout: fixed;
+}
+.ui-datepicker table th, .ui-datepicker table td {
+	width: calc(100%/7) !important;
+}
+.ui-datepicker .ui-datepicker-header {
+	background: none !important;
+	border: none !important;
+}
+.ui-datepicker .ui-datepicker-title {
+	line-height: auto;
+	line-height: 100% \9;
+}
+.ui-datepicker .ui-datepicker-title select {
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 24px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	margin: 0 6px !important;
+	padding: 0 10px;
+	width: auto
+}
+.ui-datepicker .ui-datepicker-title select:hover {
+	background: #eee;
+}
+.ui-datepicker .ui-datepicker-title select:first-child {
+	border-right: 1px solid #aaa;
+}
+.ui-datepicker-year {
+	color: var(--darkBlue);
+	font-size: 24px;
+	font-weight: 100
+}
+.ui-datepicker-year:after {
+	content: ' /';
+}
+.ui-datepicker-month {
+	color: var(--darkBlue);
+	font-size: 23px;
+	font-weight: 100
+}
+.ui-datepicker-month:before {
+	content: '/ ';
+}
+.ui-datepicker-prev, .ui-datepicker-next {
+	background: none !important;
+	border: none !important;
+	cursor: pointer;
+}
+.ui-datepicker-prev .ui-icon, .ui-datepicker-next .ui-icon {
+	background: none !important;
+}
+.ui-datepicker-prev:before, .ui-datepicker-next:before {
+	color: var(--lightBlue);
+	font-size: 24px;
+	font-weight: 100;
+	position: absolute;
+	top: 3px;
+}
+.ui-datepicker-prev {
+}
+.ui-datepicker-prev:before {
+	content: '<';
+	font-family: "Helvetica Neue";
+	font-weight: 200;
+	top: 0px;
+	left: 10px;
+}
+.ui-datepicker-next {
+}
+.ui-datepicker-next:before {
+	content: '>';
+	font-family: "Helvetica Neue";
+	font-weight: 200;
+	top: 0px;
+	right: 10px;
+}
+.ui-datepicker-prev-hover, .ui-datepicker-next-hover {
+	top: 2px !important;
+}
+/*周六周日變色*/
+.ui-datepicker-calendar thead th {
+	font-family: "微軟正黑體", sans-serif;
+}
+.ui-datepicker-calendar tr th a, .ui-datepicker-calendar tr th span, .ui-datepicker-calendar tr td a, .ui-datepicker-calendar tr td span {
+	color: #555 !important;
+}
+.ui-datepicker-calendar tr th:first-child a, .ui-datepicker-calendar tr th:first-child span, .ui-datepicker-calendar tr td:first-child a, .ui-datepicker-calendar tr td:first-child span {
+	color: #FF7979 !important;
+}
+.ui-datepicker-calendar tr th, .ui-datepicker-calendar tr td {
+
+}
+.ui-datepicker-calendar tr th:last-child a, .ui-datepicker-calendar tr th:last-child span, .ui-datepicker-calendar tr td:last-child a, .ui-datepicker-calendar tr td:last-child span {
+	color: #417505 !important;
+}
+.ui-datepicker-calendar .ui-state-default {
+	background: none !important;
+	border: none !important;
+	padding: 6px 0 !important;
+	text-align: center !important;
+}
+.ui-datepicker-calendar .ui-state-active {
+
+}
+
+.ui-datepicker-current-day, .ui-datepicker-today {
+
+}
+.ui-datepicker-current-day {
+	background: var(--lightBlue) !important;
+	box-sizing: border-box;
+} 
+.ui-datepicker-today {
+	border: 1px solid #ccc !important;
+}

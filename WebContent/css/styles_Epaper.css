@@ -1,0 +1,44 @@
+.paper_container{
+	background:#f8f8f8;
+	padding:20px 50px;
+	border: 3px solid #666;
+	margin:20px auto;
+	width: 600px;
+	border-radius: 8px;
+	box-shadow: 10px 10px 5px #999;
+	
+}
+.paper_container_title{
+	font-size:36px;
+	color:#888;
+	text-align:center;
+}
+table.form-table{
+	font-family: "微軟正黑體", "Microsoft JhengHei", 'LiHei Pro', Arial, Helvetica, sans-serif, \5FAE\8EDF\6B63\9ED1\9AD4,\65B0\7D30\660E\9AD4;
+}
+table.form-table td{
+	padding:8px 8px;
+}
+input.if_too_short_for_parent{
+/* TO FIT WITH OTHER LENGTH OF INPUT EX: select */
+	width:100%;
+}
+td.center_content{
+	text-align:center;
+}
+#paper_content{
+	margin:20px auto;
+	height:190px;
+}
+.search-result-wrap {
+/* 	因為是沒登入的頁面 所以沒menu 要置中 */
+	padding: 20px 30px 20px 30px;
+	margin-bottom: 20px;
+}
+.emphasize-font{
+	font-size:1.2em;
+}
+.emphasize-red{
+	font-size:1.2em;
+	color:red;
+}

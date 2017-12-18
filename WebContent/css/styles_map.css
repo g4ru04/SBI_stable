@@ -1,0 +1,214 @@
+	.shpLegend {
+	    border: 2px groove #dfd9c3;
+	    background-color:#F0F0F0;
+	    position: absolute;
+		bottom : 50px;
+		right :50px;
+	    display: block;
+	    z-index: 9999;
+	    height: 183.5px;
+	    width: 345px;
+	}
+    .shpLegend tbody tr.even td {
+        background: none;
+    }
+    .shpLegend th { padding:3px;}
+    .shpLegend td  {
+        padding:6px 5px;
+    }
+	.shpLegend td:nth-child(2n+1)  {
+        text-align:right;
+    }
+    .shpLegend button {
+        position: absolute;
+        top: 2px;
+        right: 3px;
+        padding: 0 .1em .1em 0.2em;
+        line-height: 9px;
+        font-size: 12px;
+    }
+	.mapLegend {
+	    width: 10px;
+	    height: 10px;
+	}
+	.header { top: 0px; }
+	.content-wrap{
+	    background: #fff;
+	    float: left;
+	    margin-left: 0px;
+	    margin-top: 100px;
+		margin-bottom: 0px;
+		padding-bottom: 6px;
+		height: calc(100vh - 136px);
+	    overflow-y: hidden;
+	    width: 100%;
+		background-color: #EEF3F9;
+	}
+	.search-result-wrap{
+ 		padding: 2px 5px 0px 5px; 
+		margin-bottom: 0px;
+		height: 100%;
+	}
+	.blink {
+	    animation-duration: 1s;
+	    animation-name: blink;
+	    animation-iteration-count: infinite;
+	    animation-direction: alternate;
+	    animation-timing-function: ease-in-out;
+	}
+	@keyframes blink {
+	    from {
+	        opacity: 0.8;
+	    }
+	    to {
+	        opacity: 0.5;
+	    }
+	}
+	.bentable {
+		margin: 0px 20px 0px 20px;
+		width:400px;
+	}
+	.bentable tr{
+		padding:5px;
+		height: 30px;
+	}
+	.bentable td:nth-child(2n+1){
+		word-break: keep-all;
+	}
+	.bentable img:hover{
+		background: #d8d8d8;
+		box-shadow:1px 1px 2px #999;
+	}
+	.info_window{
+		font-family: "·L³n¥¿¶ÂÅé", "Microsoft JhengHei", 'LiHei Pro', Arial, Helvetica, sans-serif, \5FAE\8EDF\6B63\9ED1\9AD4,\65B0\7D30\660E\9AD4;
+	}
+	.info_window th{
+		font-size: 150%;
+		font-weight: bold;
+	}
+	.info_window tr{
+		border-bottom:1px dashed #ddd;
+	}
+	.info_window tr.title{
+		border-bottom:0px dashed #ddd;
+		margin-top:20px;
+	}
+	.info_window td{
+		padding:3px;
+		text-align:center;
+	}
+	.info_window td:nth-child(1){
+		text-align:right;
+		word-break: keep-all;
+		padding-left:16px;
+	}
+	.info_window td:nth-child(2){
+		font-size: 120%;
+		padding:5px;
+/* 		padding-right:16px; */
+	}
+	.info_window td[colspan='2']{
+		text-align: center;
+		font-size: 120%;
+		padding:10px;
+	}
+	.info_window th[colspan='3']{
+		text-align: center;
+		font-size: 120%;
+		padding:10px;
+	}
+	.info_window td a{
+		text-align:left;
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+	
+	.info_window.keyValueData td:nth-child(1){
+		text-align:right;
+	}
+	.info_window.keyValueData td:nth-child(2){
+		text-align:left;
+	}
+	#panel{
+		background: url(../importPKG/fancy-tree/skin-xp/bg.png) repeat;
+		transition: all .3s linear;
+		position:fixed;
+		left:0px;
+		top:96px; 
+		min-width:260px;
+		width:auto;
+		height: calc(100vh - 149px);
+		z-index:99;
+		overflow-y: auto;
+		overflow-x: auto;
+		border: 2px solid #777;
+		border-radius: 6px;
+		box-shadow:5px 5px 5px #999;
+	}
+	
+	ul.fancytree-container {
+		max-height:calc(100vh - 190px);
+	}
+	#map{
+		height: 100%;
+ 	}
+    #map > div {}
+    #tooltip{
+        position:absolute;
+        border:1px solid #333;
+        background:#f7f5d1;
+        padding:3px;
+        color:#333;
+        display:none;
+        z-index:18000;
+	}
+	#detail_1{ 
+		position:absolute;
+		right: 50px; 
+		top: 120px; 
+		filter: alpha(opacity=85,style=0); 
+		-moz-opacity: 0.85; 
+		opacity: 0.85; 
+		z-index: 3; 
+	}
+	#detail_1 tr{ 
+		background: #FFFFFF;
+	}
+	#detail_1 caption{ 
+		background: #dee8f3;
+	}
+	#detail_1 table{
+		min-width:100%; 
+	}
+	#detail_1 td:nth-child(1){ 
+		min-width:100px;
+		border-right:1px solid rgb(236,236,236);
+	}
+	#detail_1 tr:nth-child(2n+2){ 
+		
+		background: rgb(236,236,236);
+	}
+	#detail_1 tr:nth-child(2n+2) td:nth-child(1){ 
+		border-right:1px solid #fff;
+	}
+	#detail_1 * { 
+		padding: 10px 20px;
+		word-break: keep-all;
+	}
+	.on_it:hover {
+		background: #d8d8d8;
+		border: 1px solid #bbb;
+	}
+	.ui-menu{
+		padding:2px;
+	}
+	.ui-menu-item{
+		padding:3px;
+		background: #ededed;
+		border:1px solid #ccc;
+		margin:0px;
+	}
+	.ui-menu-item:hover{
+		background: #554891;
+		color:yellow;
+	}

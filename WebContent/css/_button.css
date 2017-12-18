@@ -1,0 +1,95 @@
+/*Button*/
+.btn-row {
+	padding: 10px 0;
+}
+
+a.btn, button.btn {
+	display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.3)
+}
+
+a.btn:hover, button.btn:hover {
+	box-shadow: none;
+}
+a.btn {
+	padding: 7px 20px;
+}
+button.btn {
+	padding: 4px 20px;
+}
+/*- by Color -*/
+.btn-primary {
+	background: #16C1D5;
+	border: 1px solid rgb(23, 163, 179)
+}
+.btn-primary:hover {
+	background: rgb(47, 215, 233);
+}
+.btn-exec {
+	background: #D34200;
+	border: 1px solid rgb(179, 57, 0)
+}
+.btn-exec:hover {
+	background: rgb(230, 73, 0);
+}
+.btn-alert {
+	background: #FC3E3E;
+	border: 1px solid rgb(204, 61, 61)
+}
+.btn-alert:hover {
+	background: rgb(252, 79, 79);
+}
+.btn-darkblue {
+	background: #194A6B;
+	border: 1px solid rgb(26, 102, 153)
+}
+.btn-darkblue:hover {
+	background: rgb(39, 115, 165);
+}
+.btn-green {
+	background: #00ba95;
+	border: 1px solid rgb(0, 153, 122)
+}
+.btn-green:hover {
+	background: rgb(0, 204, 163);
+}
+.btn-orange {
+	background: #faaa00;
+	border: 1px solid rgb(204, 139, 0)
+}
+.btn-orange:hover {
+	background: rgb(255, 190, 51);
+}
+.btn-gray {
+	background: #999;
+	border: 1px solid #888
+}
+.btn-gray:hover {
+	background: #aaa;
+}
+/*- by Size -*/
+.btn-wide {
+	padding: 10px 60px;
+}
+
+/*-by Function-*/
+.btn-in-table {
+	box-sizing: border-box;
+	color: #fff;
+	display: table;
+	font-size: 16px;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 36px;
+	height: 36px;
+	position: relative;
+	cursor: pointer;
+}
+.btn-in-table i {
+	display: table-cell;
+	vertical-align: middle;
+}

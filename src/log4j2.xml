@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration name="sbi" packages="tw.com.sbi">
+ 
+  <Appenders>
+    <Console name="STDOUT" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{yyyy-MM-dd HH:mm} %level [ %F:%3L ] %m%n" charset="UTF-8"/>
+    </Console>
+    <RollingFile  name="sbiLog" append="true" fileName="/data/log/sbi/sbi.log" filePattern="/data/log/sbi/sbi-%d{yyyy-MM-dd}_%i.log">
+      <PatternLayout pattern="%d{yyyy-MM-dd_HH:mm} [ %C{1}:%M():%3L ] %m%n" charset="UTF-8"/>
+      <SizeBasedTriggeringPolicy size="4 MB"/>
+    </RollingFile >
+    <File name="sbiAnalLog" fileName="/data/log/sbi/sbi-trace.log">
+      <PatternLayout pattern="%d{yyyy-MM-dd_HH:mm} [ %F:%3L ] %m%n" charset="UTF-8"/>
+    </File>
+  </Appenders>
+  
+  <Loggers>
+    <Logger name="anal" additivity="false">
+      <AppenderRef ref="sbiAnalLog"/>
+    </Logger>
+    <Root level="ALL">
+      <AppenderRef ref="sbiLog"/>
+      <AppenderRef ref="STDOUT"/>
+    </Root>
+  </Loggers>
+  
+</Configuration>

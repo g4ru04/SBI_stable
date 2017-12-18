@@ -1,0 +1,143 @@
+<!-- 
+	註:　這個頁面單純就是SBI 404頁面
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport" id="viewport">
+    <title>404 Not Found</title>
+    <style type="text/css">
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: PingFang SC, Helvetica Neue, Hiragino Sans GB, Segoe UI, Microsoft YaHei, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            background: #f2f4f6;
+            color: #323a45;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .page {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 1.4;
+        }
+        .wrapper {
+            padding-right: 378px;
+            background-size: 278px;
+            background-position: right;
+            background-repeat: no-repeat;
+        }
+
+        .page-404 .wrapper {
+            background-image: url(/sbi/images/404.png);
+        }
+
+        h1 {
+            margin: 0;
+            color: #4f565f;
+            font-size: 120px;
+            font-weight: bold;
+        }
+        a {
+            text-decoration: none;
+        }
+        .summary {
+            margin-top: 0;
+            margin-bottom: 40px;
+            color: #76808e;
+            font-size: 24px;
+        }
+        .button {
+            display: inline-block;
+            border-radius: 4px;
+            box-sizing: border-box;
+            cursor: pointer;
+            outline: none;
+            -webkit-transition: all .1s ease;
+            transition: all .1s ease;
+            border: 1px solid #323a45;
+            background-color: #323a45;
+            color: #fff;
+            font-size: 18px;
+            padding: 0 30px;
+            height: 48px;
+            line-height: 46px;
+            margin-left: 20px;
+        }
+        .button:hover {
+            background-color: #425063;
+            border: 1px solid #425063;
+        }
+    </style>
+</head>
+
+<body>
+<script>
+function b64EncodeUnicode(str) {
+    return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function(match, p1) {
+        return String.fromCharCode('0x' + p1);
+    }));
+}
+	if (window.location.href.indexOf("404") == -1) {
+		var xmlhttp;
+		if (window.XMLHttpRequest) {
+			xmlhttp = new XMLHttpRequest();
+		} else {
+			xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xmlhttp.onreadystatechange = function() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				window.location.href = window.location.href.split("sbi/")[0]
+						+ "sbi/404.html";
+			}
+		}
+
+		xmlhttp.open("GET", 
+				window.location.href.split("sbi/")[0]
+				+"sbi/recordMsg.do?level=debug&message=" 
+				+ b64EncodeUnicode("某人取得404頁面"
+									+ "<table style='font-family: Microsoft JhengHei;'>"
+									+ "<tr><td>訪問網址:&nbsp;"+window.location.href+"</td></tr>"
+									+ "</table>").replace(/\+/g,"%2B"), true);
+		if(window.location.href.indexOf("localhost")==-1){
+			xmlhttp.send();
+		}
+		setTimeout(function() {
+			window.location.href = window.location.href.split("sbi/")[0]
+					+ "sbi/404.html";
+		}, 3000);
+
+	}
+</script>
+    <div class="page page-404">
+        <div class="wrapper">
+            <h1>404!</h1>
+            <p class="summary">頁面，你到哪兒去了&nbsp;&nbsp;.&nbsp;&nbsp;.&nbsp;&nbsp;.</p>
+            <a class="button" href="http://www.a-ber.com.tw/sbi/">關於接下來的日子</a>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- 
+
+	<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	<html><head>
+	<title>404 Not Found</title>
+	</head><body>
+	<h1>Not Found</h1>
+	<p>The requested URL was not found on this server.</p>
+	<hr>
+	<address>Apache/2.4.7 (Windows) Server at Port 80</address>
+	</body></html>
+
+-->

@@ -1,0 +1,40 @@
+.sbi-logo-line{
+	background-image: url(../images/cdri-logo.gif);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position:relative;
+	top:6px;
+	left:5px;
+	width:32px;
+	height:32px;
+	display: inline-block;
+}
+.word-75pa{
+	font-size:75%; 
+}
+.word-120pa{
+	font-size:120%; 
+}
+table.with-padding td{
+	padding:8px;
+}
+table.with-full{
+	width:98%;
+}
+table.with-textalign-c{
+	text-align:center;
+}
+.header-line{
+	border-top:2px solid #dfdfdf;
+}
+.footer-line{
+	border-bottom:2px solid #dfdfdf;
+}
+
+.func:hover{
+	box-shadow:0px 0px 0px 0px rgba(80%,80%,80%,0.5),-1px -1px 1px rgba(60%,60%,60%,0.5) inset;
+	background-color:#ddd;
+}
+.func.pressed{
+	background-color:#ccc;
+}

@@ -1,0 +1,59 @@
+/* 左上角框框CSS 前半基本上通通綁id 後半是jqeury功能accordion menu弄出來的css調整*/
+/* 因為業態查詢 捷運人流*3等分析都寫過 貌似不錯看又實用 所以整合 */
+#left-top-box {
+	position:fixed;
+	top:55px;
+	left:120px;
+	border:1px solid #dfdfdf;
+	background: #fff ;
+	border-radius: 2px;
+	z-index:5;
+}
+#left-top-box .btn{ 
+	float:right;
+	margin-left:10px;
+}
+#left-top-box .btn.btn-darkblue,#left-top-box .btn.btn-gray{ 
+	color: white; 
+}
+#menu-title-bar{
+	font-size:32px;
+	height: 46px;
+	border-bottom:1px solid #ddd;
+	min-width:406px;
+}
+#getmenu-btn{
+	float:right;
+	border-left:1px solid #ddd;
+	padding:8px 10px 6px 10px;
+}
+#menu li div{
+	padding:8px 12px;
+}
+.sbi-logo-line{
+	background-image: url(../images/cdri-logo.gif);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position:relative;
+	top:6px;
+	left:5px;
+	width:32px;
+	height:32px;
+	display: inline-block;
+}
+
+.ui-widget, .ui-widget *{
+	font-family: "微軟正黑體","Microsoft JhengHei";
+}
+.ui-accordion-header.ui-state-active{
+	background: #ddd !important;
+	color: #000 !important; 
+	cursor: default;
+}
+.ui-state-active .ui-icon{
+    background-image: url("./images/ui-icons_555555_256x240.png");
+}
+.ui-state-active {
+	color:#000 !important;
+	background:#eee !important;
+}

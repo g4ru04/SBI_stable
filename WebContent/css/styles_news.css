@@ -1,0 +1,195 @@
+h3.ui-list-title {
+	border-bottom: 1px solid #ccc;
+	color: #307CB0;
+}
+section {
+	margin-bottom: 20px;
+}
+.panel{
+    height: 500px;
+    overflow-y: auto;
+}
+/* #################### */
+/* #####以下是頁籤CSS##### */
+/* #################### */
+
+#abgne-block-20120327 {
+	width: calv(100wh-300px);
+}
+#abgne-block-20120327 ul, #abgne-block-20120327 li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#abgne-block-20120327 .tabs li {
+	float: left;
+	margin: 0 0 -1px 5px;
+ 	background: none; 
+	height: 44px;
+	cursor: pointer;
+	padding:8px;
+	font-size:24px;
+}
+#abgne-block-20120327 .tabs li.active {
+ 	background: #eee; 
+	padding-bottom: 1px;
+	border-bottom: none;
+	color:#307CB0;
+	font-weight:900;
+}
+#abgne-block-20120327 .tabs li.hover{
+	background: #f5f5f5; 
+}
+#abgne-block-20120327 .tabs li.active span {
+	text-decoration:underline;
+}
+#abgne-block-20120327 .tabs span {
+	display: block;
+	float: left;
+	overflow: hidden;
+	padding: 7px 15px 5px 15px;
+}
+#abgne-block-20120327 .tab_container {
+	clear: both;
+	background: #eee;
+	overflow: hidden;
+}
+#abgne-block-20120327 .tab_container > ul {
+	position: relative;
+ 	height:  calc(72vh);
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+/* scrollbar css  start*/
+#abgne-block-20120327 .tab_container > ul::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#abgne-block-20120327 .tab_container > ul::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+/* scrollbar css  end*/
+
+#abgne-block-20120327 .tab_container > ul::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+#abgne-block-20120327 .tab_container .tab_content > li {
+	position: absolute;
+	width: calc(84vw);
+	height: 100%;
+	padding: 8px;
+}
+#abgne-block-20120327 .tab_container .tab_content > li img {
+	display: block;
+	float: left;
+	margin-right: 15px;
+}
+#abgne-block-20120327 .tab_container .tab_content li h3 {
+	font-size: 22px;
+	line-height: 22px;
+	margin: 5px 0 15px;
+}
+/* #################### */
+/* #####以上是頁籤CSS##### */
+/* #################### */
+
+/* #news-area #news-table td { */
+/* 	line-height:30px; */
+/* 	font-size: 22px; */
+/* 	font-weight: 200; */
+/* } */
+
+/* #news-area #news-table td a, ul li a:active { */
+/* 	text-decoration:none; */
+/* 	display:block; */
+/* } */
+/* #news-area #news-table td a:hover { */
+/* 	color: #08c; */
+/* 	background: #ccc; */
+/* } */
+
+.content-wrap {
+	overflow: hidden;
+}
+.search-result-wrap {
+    margin-bottom: 20px;
+}
+.result-table{
+	text-align: center;
+	margin-top:20px;
+}
+table.dataTable.no-footer.smoothbottom {
+    border-bottom: 1px solid #ddd;
+}
+.dataTables_filter{
+	margin-bottom: 10px;
+}
+.paginate_button{
+    background: none !important;
+    border: none !important;
+}
+.paginate_button:hover{
+    background: #ccc !important;
+}
+.result-table2{
+	margin: 0 auto;
+}
+.result-table2, .result-table2 th,.result-table2 td, table.result-table2 tbody tr {
+	background: none;
+	border:0px solid #000;
+	text-align: center;
+	margin-top:20px;
+	width: 600px;
+}
+table.result-table2 tbody tr {
+	border-bottom: 1px solid #f00;
+}
+.on_it{
+	padding:12px 10px;
+	margin: 0 auto;
+	font-weight:900;
+	box-shadow: 3px 3px 10px rgba(100,100,100,0.3);
+}
+.on_it:hover{
+	background: #bbb;
+	color: #00c;
+	border:2px solid #888;
+	box-shadow: 0px 0px 0px #888;
+}
+.ui-widget-content a.btn.btn-darkblue.btn-wide{
+	color: #fff;
+}
+.ui-widget{
+	font-family: "微軟正黑體", "Microsoft JhengHei", 'LiHei Pro', Arial, Helvetica, sans-serif, \5FAE\8EDF\6B63\9ED1\9AD4,\65B0\7D30\660E\9AD4 !important;
+}
+
+.bentable2 {
+	font-family: "微軟正黑體", "Microsoft JhengHei", 'LiHei Pro', Arial, Helvetica, sans-serif, \5FAE\8EDF\6B63\9ED1\9AD4,\65B0\7D30\660E\9AD4;
+}
+.bentable2 td:nth-child(2n+1){
+	text-align:left;
+	word-break: keep-all;
+}
+.bentable2 td{
+	padding-left:5px;
+	padding:3px 5px;
+}
+.bentable2 > tbody > tr > td:nth-child(1){
+	padding-left:25px;
+}
+.bentable2 th{
+	word-break: keep-all;
+	padding:16px 0px 2px 0px;
+	text-align:left;
+	font-size:22px;
+	font-weight: bold;
+	color:#444;
+}

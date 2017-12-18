@@ -1,0 +1,31 @@
+.axis path, .axis line { 
+    fill: none; 
+    stroke: #000; 
+    shape-rendering: crispEdges; 
+    stroke-width: 1.5;
+} 
+.bigger-word{
+	font-size:1.2em;
+}
+#tooltip{
+	position:absolute;
+	border:1px solid #333;
+	background:#f7f5d1;
+	padding:3px;
+	color:#333;
+	display:none;
+	z-index:18010;
+	min-width:80px; 
+	word-break:keep-all;
+	line-height:14px;
+	text-align:left;
+	border-radius:2px;
+	opacity:0.9;
+	padding:6px;
+}
+#tooltip td{
+	padding:3px;
+}
+#tooltip *{
+	word-break: keep-all;
+}
